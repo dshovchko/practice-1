@@ -2,7 +2,7 @@ import config from "./rollup.config";
 import merge from "lodash/merge";
 
 export default merge({
-    input: "test/spec/index.spec.js",
+    input: "test/spec/index.js",
     output: {
         file: "build/test-bundle.js"
     },
