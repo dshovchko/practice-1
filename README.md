@@ -3,15 +3,16 @@
 ## Начало работы
 
 Установите зависимости проекта:
+
 `npm install`
 
 После этого вам будут доступны следующие команды:
 
  - `npm run lint` - проверка качества вашего кода утилитой ESLint
- - `npm run test [test-file]` - запустить unit-тесты для определенного файла тестов в консоли, например: `npm run test test/spec/task-1.spec.js`
+ - `npm run test [test-file]` - запустить unit-тесты из указанного файла в консоли, например: `npm run test test/spec/task-1.spec.js`
  - `npm run test:all` - запуск всех unit-тестов в консоли
- - `npm run test -- --watch [test-file]`, `npm run test:all -- --watch` - запуск одного или всех unit-тесты в консоли, с автоматическим перезапусков тестов при изменении исходного кода. Например: `npm run test -- --watch test/spec/task-1.spec.js`
- - `npm run test:browser` - запуска всех unit-тестов в браузере
+ - `npm run test -- --watch [test-file]`, `npm run test:all -- --watch` - запуск одного или всех unit-тестов в консоли, с автоматическим перезапуском при изменении исходного кода. Например: `npm run test -- --watch test/spec/task-1.spec.js`
+ - `npm run test:browser` - запуск всех unit-тестов в браузере
  
 Помните, каждый раз когда ваши тесты выполняются корректно, однин котик становится радостным!
 
