@@ -10,9 +10,8 @@
 
  - `npm run lint` - проверка качества вашего кода утилитой ESLint
  - `npm run test [test-file]` - запустить unit-тесты из указанного файла в консоли, например: `npm run test test/spec/task-1.spec.js`
- - `npm run test:all` - запуск всех unit-тестов в консоли
- - `npm run test -- --watch [test-file]`, `npm run test:all -- --watch` - запуск одного или всех unit-тестов в консоли, с автоматическим перезапуском при изменении исходного кода. Например: `npm run test -- --watch test/spec/task-1.spec.js`
- - `npm run test:browser` - запуск всех unit-тестов в браузере
+ - `npm run test` - запуск всех unit-тестов в консоли
+ - `npm run test:watch [test-file]`, `npm run test:watch` - запуск одного или всех unit-тестов в консоли, с автоматическим перезапуском при изменении исходного кода. Например: `npm run test:watch test/spec/task-1.spec.js`
  
 Помните, каждый раз когда ваши тесты выполняются корректно, один котик становится радостным!
 
@@ -135,4 +134,5 @@ let package0 = {'name': 'boots', 'weight': 10.3, 'price': 122, 'fragile': false,
 
 Задача 10 (\*)
 --------------
+
 Написать алгоритм преобразования числа в формат римских цифр.

@@ -1,26 +1,24 @@
-import chai from "chai";
-import task from "../../src/task-7.js";
+import task from '../../src/task-7.js';
 
-const assert = chai.assert,
-    unique = task;
+const unique = task;
 
-describe("Task 7: Unique Values", () => {
+describe('Task 7: Unique Values', () => {
 
-    it("Empty array",
-        () => assert.deepEqual(unique([]), [])
-    );
+  it('Empty array',
+    () => expect(unique([])).toEqual([])
+  );
 
-    it("One-value array",
-        () => assert.deepEqual(unique([5]), [5])
-    );
+  it('One-value array',
+    () => expect(unique([5])).toEqual([5])
+  );
 
-    it("Boring case",
-        () => assert.deepEqual(unique([8, 2, 2, 3, 8, 2, 2, 3]), [8, 2, 3])
-    );
+  it('Boring case',
+    () => expect(unique([8, 2, 2, 3, 8, 2, 2, 3])).toEqual([8, 2, 3])
+  );
 
-    it("Array with different types case", () => {
-        const obj = {},
-            arr = [];
-        assert.deepEqual(unique(["A", 5, obj, true, arr, obj, "a", 5, obj]), ["A", 5, obj, true, arr, "a"]);
-    });
+  it('Array with different types case', () => {
+    const obj = {},
+        arr = [];
+    expect(unique(['A', 5, obj, true, arr, obj, 'a', 5, obj])).toEqual(['A', 5, obj, true, arr, 'a']);
+  });
 });
